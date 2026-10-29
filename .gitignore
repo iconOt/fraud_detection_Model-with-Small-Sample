@@ -1,0 +1,27 @@
+# Environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Large model artifact (>100MB, cannot be pushed to GitHub directly)
+# Regenerate by running the notebook, or host it externally / use Git LFS.
+fraud_model.pkl
+*.pkl
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

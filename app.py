@@ -42,14 +42,14 @@ CORS(app, resources={
 # 2. Load the trained model
 # --------------------------------------------------
 
-MODEL_PATH = Path(__file__).resolve().parent / "fraud_model.pkl"
+MODEL_PATH = Path(__file__).resolve().parent / "fraud_model.joblib"
 
 try:
     model = joblib.load(MODEL_PATH)
 except FileNotFoundError:
     raise RuntimeError(
         f"Model file not found: {MODEL_PATH}. "
-        "Train and save fraud_model.pkl first."
+        "Ensure fraud_model.joblib is included in the deployment."
     )
 except Exception as exc:
     raise RuntimeError(

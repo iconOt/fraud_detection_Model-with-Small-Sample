@@ -15,8 +15,8 @@ __pycache__/
 node_modules/
 frontend/dist/
 
-# Large model artifact (>100MB, cannot be pushed to GitHub directly)
-# Regenerate by running the notebook, or host it externally / use Git LFS.
+# The uncompressed model exceeds GitHub's 100 MB file limit.
+# The compressed fraud_model.joblib is small enough to include in deployments.
 fraud_model.pkl
 *.pkl
 
